@@ -194,7 +194,7 @@ main{
     height: 50vh;
     display: flex;/*改變元素屬性：display ，彈性盒子：display: flex*/
     justify-content: flex-end;/*justify-content：水平對齊，flex-end：對齊結束點*/
-    background-image: url(https://picsum.photos/1200/1200?random=7);/*插入背景圖片：background-image: url(網址);*/
+    background-image: url(/cve/image/g.png);/*插入背景圖片：background-image: url(網址);*/
     background-size: cover;/*背景圖片大小：background-size，cover：等比例縮放，並填滿框架大小*/
     background-position: center;/*背景圖片位置：background-position ，center置中*/
 }
@@ -276,9 +276,6 @@ footer{
         padding: 6em 2em;
     }
     
-    .study-image{
-    width: 100%;
-    }
 }
 @media only screen and (min-width: 768px) {
     #theme .push{
@@ -292,9 +289,6 @@ footer{
         padding: 2em 1.2em;
     }
     
-    .study-image{
-    width: 50%;
-    }
 }
 @media only screen and (min-width: 1024px) {
     header nav{
@@ -317,9 +311,6 @@ footer{
     }
     #service .title{
     padding: 4em 8em;
-    }
-    .study-image{
-    width: 20%;
     }
 }
 @media only screen and (min-width: 1280px) {
@@ -352,8 +343,5 @@ footer{
     #service .grid-m-4 .push:hover{
         opacity: 1;
         margin-top: 0;
-    }
-    .study-image{
-    width: 20%;
     }
 }
