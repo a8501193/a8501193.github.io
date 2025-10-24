@@ -1,108 +1,286 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> <!-- icon -->
-  <link rel="stylesheet" href="css/loading.css">
-  <!-- <link rel="stylesheet" href="css/reset.css"> -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-
-  <title>個人履歷</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css"> <!--外連式，抓CSS檔-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--外連式，抓font awesome網址，用小圖示要打-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
 </head>
-
 <body>
-  <section id="navbar">
-    <header>
-      <div id="logo" class="">
-        <h3>
-          Rayne 工作履歷
-        </h3>
-      </div>
-      <nav id="menu" class="">
-        <ul>
-          <li><a href="">個人簡介</a></li>
-          <li><a href="">工作經歷</a></li>
-          <li><a href="">專業技能</a></li>
-          <li><a href="">實作照片</a></li>
-        </ul>
-      </nav>
+    <header class="flex"> <!--header：頁首，區塊元素-->
+        <div id="logo" class="grid-12 grid-m-12 grid-l-4">
+            <h1>
+                Rayne 工作履歷
+            </h1>
+        </div>
+        <nav class="grid-12 grid-m-12 grid-l-8"> <!--nav：副選單，區塊元素-->
+            <ul>
+                <li><a href="#about">我的自傳</a></li>
+                <li><a href="#product">學習經歷</a></li>
+                <li><a href="#service">服務項目</a></li>
+                <li><a href="#contact">聯絡我們</a></li> 
+                
+            </ul>
+        </nav>
+        <div class="bar">
+            <div class="nav_t"></div>
+            <div class="nav_m"></div>
+            <div class="nav_b"></div>
+        </div>
     </header>
-    <div class="">
-      <div class="">
-        <img src="image/IMG_E5467.JPG" alt="" class="avatar">
-      </div>
+    <div id="theme">
+        <div class="slide">
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+        </div>
+        <div class="push">
+            <!-- <h2>首頁</h2> -->
+            <img src="image/IMG_E5467.JPG" alt="" class="avatar">
+            <p>每個影像都是曾經的足跡</p>
+            <!-- <a href="#" class="btn-theme">MORE</a> -->
+        </div>
     </div>
-  </section>
-  <section id="introduction"><!--自介-->
-    <div class="container">
-      <div class="row text-center py-3">
-        <h3>個人簡介</h3>
-      </div>
-      <div class="row mb-5 align-middle">
-        <div class="col-lg-6 text-justify">
-          <div class="px-4">
-
-            <h5><iconify-icon icon="tabler:command" class="align-middle"></iconify-icon>自傳</h5>
+    
+    <div id="about" class="flex">
+        <div class="grid-10 grid-l-5">
+            <h2>我的特質</h2>
+                <p>
+                    平常待人和善、遇事不亂、重邏輯，公私分明，即便與同事發生過意見不合，在需要一起合作的情況，
+                    <br>我會把心情歸零，工作以公司事務為優先，我相信只要各司其職照樣能完成工作。
+                    <br>在面對未知有隨機應變能力，面對問題會尋找並思考底層原因，而非停留於表象。
+                </p>
+            </div>
+                
+        <div class="grid-10 grid-l-5">
+            <h2>工作方式</h2>
             <p>
-              你好！我是一個樂於求知、學習的人，與他人的交流上，我是理性分析樂於溝通的。
-              <br>目前在自動化產業已有8年工作經驗，在我的職業生涯中，我會投資自己去學習非本質領域的各種技能，在自動化產業裡我已能獨立作業，之後也可以邁向前端領域。
-              <br>我對未來將遇到的任何挑戰感到興奮，每到一個新的地方我都會用我至今所學，去面對我所遇到的任何問題。
-              <br>當遇到我之適量所無法觸及的高度時，我也會尋求有可能得到答案的管道，對我來說，沒有解決不了的問題，有的只是時間問題。
+                喜歡思考過後把問題解決的成就感，也享受解決問題的過程
+                <br>理性是我的特點且會盡最大能力以最高效率完成工作
+                <br>始終擔任好公司與客戶的橋樑，公司與客戶同樣希望設備好且無問題盡最大能力創造共贏
+                <br>喜歡做小工具或善用 AI 輔助工作提升效率
             </p>
-          </div>
         </div>
-        <div class="col-lg-6">
-          <div class="px-4 text-nowrap table-responsive">
-            <table class="table ">
-              <tbody>
-                <tr>
-                  <td>姓名</td>
-                  <td>羅睿文</td>
-                </tr>
-                <tr>
-                  <td>出生日期</td>
-                  <td>1996/01/19-<iconify-icon icon="tabler:zodiac-capricorn" class="align-middle"></iconify-icon></td>
-                </tr>
-                <tr>
-                  <td>居住地</td>
-                  <td>台中</td>
-                </tr>
-                <tr>
-                  <td>畢業學校</td>
-                  <td>建國科技大學</td>
-                </tr>
-                <tr>
-                  <td>科系</td>
-                  <td>電機工程系</td>
-                </tr>
-                <tr>
-                  <td>電子信箱</td>
-                  <td>a8501193@gmail.com</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="grid-10 grid-l-3 item">
+            <div class="fa-solid fa-user fa-4x"></div>
+            <h3>關於我</h3>
+            <p>
+              目前定居台中，租屋族，有轉換領域的意願
+              <br>對自己的學習能力是自信的
+              <br>活全的工作經歷裡AB PLC、ifix、Indusoft、MySQL、PID等
+              <br>皆是到職後使用以往相似經驗透過自學而成
+              <br>約4~5個月上手並獨立作業
+              <br>設備領域大於10年，一路從 配線識圖 > 電路圖繪製 > 寫程式 > 規劃人機圖控 > 設備整機規劃等等，一步步做上來。
+            </p>
         </div>
-      </div>
-      <div class="text-center">
-        <h4>證照</h4>
-        <div class="py-3 row">
-          <p class="col-md-3 col-sm-6"><iconify-icon icon="lucide:award"></iconify-icon>丙級室內配線</p>
-          <p class="col-md-3 col-sm-6"><iconify-icon icon="lucide:award"></iconify-icon>丙級工業配線</p>
-          <p class="col-md-3 col-sm-6"><iconify-icon icon="lucide:award"></iconify-icon>丙級自來水配管</p>
-          <p class="col-md-3 col-sm-6"><iconify-icon icon="lucide:award"></iconify-icon>乙級室內配線</p>
+        <div class="grid-10 grid-l-4 item">
+            <div class="fa-solid fa-pen-nib fa-4x"></div>
+            <h3>前職工作績效</h3>
+            <p>
+              將電熱式熱壓機原本升溫速率最多1分鐘3℃
+              <br>深入研究PID調整並優化至1分鐘5℃升溫曲線能跟上目標溫度，非單一目標溫度升溫，屬於斜率升溫，目標溫隨時間改變
+              <br>到職未滿3個月即赴日本出差並成功驗收設備，半年赴中國出差處理設備全自動流程欠缺將設備成功上線等問題
+              <br>在職期間有客戶指定為上門維修的人員
+            </p>
         </div>
-      </div>
+        <div class="grid-10 grid-l-3 item">
+            <div class="fa-solid fa-comments fa-4x"></div>
+            <h3>工作期望</h3>
+            <p>
+              不考慮需國外出差的職缺(除非頻率極低)
+              <br>關於加班只要有加班費且"比照or優於"勞基法就能配合
+              <br>如欲邀約面試，請使用訊息或emai，電話不會接聽未知來電
+              <br>未來希望將所學的事物學以致用，不管將來任職於什麼工作。
+            </p>
+        </div>
     </div>
+    <!-- <div class="btn-theme">CLICK</div> -->
+    <div id="product" class="flex">
+        <div class="grid-12">
+            <h2>學習經歷</h2>
+            <p>回顧整個過往，我做了無數嘗試，也學習多個技能，每一項經歷都讓我的人生更豐富。</p>
+        </div>
+        <div class="grid-11 grid-s-6 grid-m-4 grid-l-2">
+            <img src="image/a.jpg" alt="">
+            <div class="push">電控配線、線路查修</div>
+        </div>
+        <div class="grid-11 grid-s-6 grid-m-4 grid-l-2">
+            <img src="image/b.png" alt="">
+            <div class="push">2D繪圖</div>
+        </div>
+        <div class="grid-11 grid-s-6 grid-m-4 grid-l-2">
+            <img src="image/c.png" alt="">
+            <div class="push">PLC程式規劃</div>
+        </div>
+        <div class="grid-11 grid-s-6 grid-m-4 grid-l-2">
+            <img src="image/d.png" alt="">
+            <div class="push">HMI設計</div>
+        </div>
+        <div class="grid-11 grid-s-6 grid-m-4 grid-l-2">
+            <img src="image/e.jpg" alt="">
+            <div class="push">程式語言</div>
+        </div>
+        <div class="grid-11 grid-s-6 grid-m-4 grid-l-2">
+            <img src="image/f.jpg" alt="">
+            <div class="push">室內配線</div>
+        </div>
+    </div>
+    <div id="product-hot" class="flex">
+        <div class="grid-12">
+            <h2>產品熱銷精選輯</h2>
+            <p>輕易一半勝利公告上班宅宅地下，用於大聲處於生活予以日常彩色，如果你主席如果您工具他人說著工廠轉讓笑。</p>
+        </div>
+        <div class="grid-11 grid-l-3">
+            <img src="https://picsum.photos/600/400?random=1" alt="">
+            <h3>熱門精選一</h3>
+            <p>點此節省，二手電影灌水之外口氣檢驗三年意義工程師，便宜昨天。</p>
+            <a href="#" class="btn-theme">瞭解更多</a>
+        </div>
+        <div class="grid-11 grid-l-3">
+            <img src="https://picsum.photos/600/400?random=2" alt="">
+            <h3>熱門精選二</h3>
+            <p>點此節省，二手電影灌水之外口氣檢驗三年意義工程師，便宜昨天。</p>
+            <a href="#" class="btn-theme">瞭解更多</a>
+        </div>
+        <div class="grid-11 grid-l-3">
+            <img src="https://picsum.photos/600/400?random=3" alt="">
+            <h3>熱門精選三</h3>
+            <p>點此節省，二手電影灌水之外口氣檢驗三年意義工程師，便宜昨天。</p>
+            <a href="#" class="btn-theme">瞭解更多</a>
+        </div>
+    </div>
+    <main> <!--main：內容主體區-->
+        <div class="grid-12 grid-m-6">
+            <h2>更多相關內容</h2>
+            <p>展示一番農村這就是小時能否利用競爭筆記本，字幕登陸任何，發。</p>
+            <a href="#" class="btn-theme">瞭解更多</a>
+        </div>
+    </main>
+    <div id="service" class="flex">
+        <div class="grid-12 title">
+            <h2>不良品的服務項目</h2>
+            <p>證據適當是不是一會周邊工程師，失望物理求助，考察主管驚人本月幫我，依法就會手段開發商工資能源下載次數，版權就像，近年來。</p>
+            <a href="#" class="btn-theme">瞭解更多</a>
+            <h6>人員不禁各個事務玩具詳細內容，空氣究竟有一些較高媽媽想法普通偉大無奈金融物品老婆以前，為了放在最高。</h6>
+        </div>
+        <div class="grid-12 grid-m-4">
+            <img src="https://picsum.photos/600/600?random=4" alt="">
+            <div class="push">
+                <h3>服務一</h3>
+                <p>學歷高雄大戰權利持續參數本地那是再次萬元，展開網站地說財產歡迎光臨中有消費評論，其實都沒專業交給時代工廠，升級版權所有。</p>
+                <a href="#" class="btn-theme">瞭解更多</a>
+            </div>
+            
+        </div>
+        <div class="grid-12 grid-m-4">
+            <img src="https://picsum.photos/600/600?random=5" alt="">
+            <div class="push">
+                <h3>服務二</h3>
+                <p>學歷高雄大戰權利持續參數本地那是再次萬元，展開網站地說財產歡迎光臨中有消費評論，其實都沒專業交給時代工廠，升級版權所有。</p>
+                <a href="#" class="btn-line">瞭解更多</a>
+            </div>
+            
+        </div>
+        <div class="grid-12 grid-m-4">
+            <img src="https://picsum.photos/600/600?random=6" alt="">
+            <div class="push">
+                <h3>服務三</h3>
+                <p>學歷高雄大戰權利持續參數本地那是再次萬元，展開網站地說財產歡迎光臨中有消費評論，其實都沒專業交給時代工廠，升級版權所有。</p>
+                <a href="#" class="btn-theme">瞭解更多</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="contact" class="flex">
+        <div class="grid-9 grid-m-5 grid-l-2">
+            <h3>商家沿革</h3>
+            <p>
+                上來成功有什麼要是明天一邊眼光手術朋友，樂隊專業工藝目的此外接收，中央此刻全市。
+            </p>
+            <p>
+                更大檢測設立推薦警察不禁我的西安責任信箱這樣漫畫上升，推廣今天上去人才，評分常用十大要去，點擊電子。
+            </p>
+        </div>
+        <div class="grid-9 grid-m-5 grid-l-2">
+            <h3>商家資訊</h3>
+            <table> <!--表格-->
+                <tr>
+                    <td><i class="fa-solid fa-location-dot"></i></td>
+                    <td>台北市信義區信義路一段一巷1號1樓</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr> <!--加橫線-->
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-phone"></i></td>
+                    <td>
+                        （02）2234-5678<br>
+                        （02）2234-6678
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-fax"></i></td>
+                    <td>（02）2234-7778 #123</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-envelope"></i></td>
+                    <td>sample@gmail.com</td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-9 grid-m-5 grid-l-2">
+            <h3>相關連結</h3>
+            <a href="#">郵件方案相應車輛消</a>
+            <hr>
+            <a href="#">本頁不過我市為主準備輕</a>
+            <hr>
+            <a href="#">江湖上門上門你是完</a>
+            <hr>
+            <a href="#">郵件方案相應車</a>
+            <hr>
+            <a href="#">郵件方案相應車輛車輛車輛消</a>
+        </div>
+        <div class="grid-9 grid-m-5 grid-l-2">
+            <h3>商家歷史</h3>
+            <a href="#">毫不收藏本頁出了</a>
+            <p>神秘森林記錄無限抽菸區接觸應當藍色劇情這是法律責任，決定頻道一定會最。</p>
+            <hr>
+            <a href="#">制定它的僅供工具冠</a>
+            <p>至於不夠試驗究竟長度聯想他們風情初步網遊寫出來青年，才是幾天但他。</p>
+        </div>
+    </div>
+    <footer> <!--版權宣告-->
+        Copyright &copy; 2023 Wen. All rights reserved.<br>
+        版權所有 &copy; 2023 羅睿文
+    </footer>
+    <!-- <div id="gotop">
+        <i class="fa-solid fa-square-caret-up"></i>
+    </div> -->
+    <!--不一定要用i，可以直接使用-->
+    <a href="#" id="gotop" class="fa-solid fa-square-caret-up"></a> <!--div改用a然後寫href="#"，回到首頁的意思-->
 
-  </section>
-
+    <div id="load">
+        <div class="loading"></div>
+    </div>
 </body>
-
 </html>
 <script src="js/script.js"></script>
