@@ -227,6 +227,7 @@ main .grid-12{
     color: #fff;
     background-color: var(--alpha);
 }
+
 /* Contact's Design */
 #contact{
     background-color: var(--contact);
@@ -247,6 +248,7 @@ main .grid-12{
     border-width: 1px;
     margin: 0.5em 0;
 }
+
 /*Footer's Design*/
 footer{
     padding: 1.5em;
@@ -273,7 +275,7 @@ footer{
 }
 @media only screen and (min-width: 375px) {
     #service .grid-m-4 .push{
-        padding: 6em 2em;
+        padding: 10em 2em;
     }
     
 }
@@ -286,7 +288,8 @@ footer{
         padding: 10% 3em;
     }
     #service .grid-m-4 .push{
-        padding: 2em 1.2em;
+        padding: 1em 1em;
+        line-height: 1.2;
     }
     
 }
@@ -311,6 +314,9 @@ footer{
     }
     #service .title{
     padding: 4em 8em;
+    }
+    #contact td br{
+        display: none;
     }
 }
 @media only screen and (min-width: 1280px) {
