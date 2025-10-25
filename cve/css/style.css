@@ -275,7 +275,7 @@ footer{
 }
 @media only screen and (min-width: 375px) {
     #service .grid-m-4 .push{
-        padding: 10em 2em;
+        padding: 6em 2em;
     }
     
 }
